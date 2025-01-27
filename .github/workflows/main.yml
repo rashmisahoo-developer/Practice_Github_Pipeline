@@ -6,7 +6,7 @@ on:
       name:
         description: 'Enter your name'
         required: true
-        default: 'GitHub User'
+        default: 'GitHubUser'
       environment:
         description: 'Choose environment'
         required: true
@@ -31,4 +31,4 @@ jobs:
 
       - name: Run the testing powerscript file
         run: |
-          pwsh -File ./scripts/test.ps1
+          pwsh -File ./scripts/test.ps1 ${{ github.event.inputs.name }} ${{ github.event.inputs.environment }}
