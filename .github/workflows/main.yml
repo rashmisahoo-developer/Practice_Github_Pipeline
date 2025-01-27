@@ -31,4 +31,4 @@ jobs:
 
       - name: Run the testing powerscript file
         run: |
-          pwsh -file ../../scripts/test.ps1 
+          pwsh -File ./scripts/test.ps1
