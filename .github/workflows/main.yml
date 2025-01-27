@@ -7,14 +7,7 @@ on:
         description: 'Enter your name'
         required: true
         default: 'GitHubUser'
-      environment:
-        description: 'Choose environment'
-        required: true
-        default: 'production'
-        options:
-          - production
-          - staging
-          - development
+      
 
 jobs:
   build:
