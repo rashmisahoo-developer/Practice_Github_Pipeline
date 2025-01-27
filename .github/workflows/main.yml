@@ -30,4 +30,5 @@ jobs:
           echo "The environment selected is ${{ github.event.inputs.environment }}."
         
       - name: Run the testing powerscript file
+      - run: |
         pwsh -file ./test.ps1
