@@ -19,16 +19,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  
 
       - name: Display the inputs
         run: |
           echo "Hello, ${{ github.event.inputs.name }}!"
           echo "The environment selected is ${{ github.event.inputs.environment }}."
-        
+
       - name: Run the testing powerscript file
         run: |
-          pwsh -file ./test.ps1
+          pwsh -file ../../scripts/test.ps1 ${{ github.event.inputs.name }} ${{ github.event.inputs.environment }}
