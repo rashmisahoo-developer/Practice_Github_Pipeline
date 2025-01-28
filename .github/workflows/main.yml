@@ -19,9 +19,9 @@ jobs:
 
       - name: Display the inputs
         run: |
-          echo "Hello, ${{ github.event.inputs.name }}!"
-          echo "The environment selected is ${{ github.event.inputs.environment }}."
+          echo "Hello, ${{ inputs.name }}!"
+          echo "The environment selected is ${{ inputs.environment }}."
 
       - name: Run the testing powerscript file
         run: |
-          pwsh -File ./scripts/test.ps1 ${{ github.event.inputs.name }} ${{ github.event.inputs.environment }}
+          pwsh -File ./scripts/test.ps1 ${{ inputs.name }} ${{ github.event.inputs.environment }}
