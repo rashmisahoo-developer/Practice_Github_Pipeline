@@ -7,7 +7,10 @@ on:
         description: 'Enter your name'
         required: true
         default: 'GitHubUser'
-      
+      colour:
+        description: 'Enter your colour'
+        required: true
+        default: 'GitHubUser'
 
 jobs:
   build:
