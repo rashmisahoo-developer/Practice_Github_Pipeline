@@ -1,3 +1,3 @@
-$name = $args[0]
+$name = $args
 Write-Host "Hello World"
 Write-Host "Name is $name"
