@@ -27,4 +27,4 @@ jobs:
 
       - name: Run the testing powerscript file
         run: |
-          pwsh -File ./scripts/test.ps1 ${{ inputs.name }} ${{ inputs.colour }}
+          pwsh -File ./scripts/test.ps1 "${{ inputs.name }}" "${{ inputs.colour }}"
